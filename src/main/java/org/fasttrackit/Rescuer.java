@@ -4,9 +4,9 @@ public class Rescuer {
     String name;
     Double money;
     String gender;
-    Double age;
+    int age;
     String livingConditions;
-    Double petsNumber;
+    int petsNumber;
 
 
 

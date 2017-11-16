@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class Dog {
 String name;
-Double age;
+int age;
 String healthCondition;
 String breed;
 String gender;

@@ -2,8 +2,8 @@ package org.fasttrackit;
 
 public class Hospital {
     String name;
-    Double personnelNumber;
-    Double roomNumber;
+    int personnelNumber;
+    int roomNumber;
     Double price;
 
 }
