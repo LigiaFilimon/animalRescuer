@@ -10,10 +10,6 @@ public class App
     {
         System.out.println( "Hello World!" );
     }
-Rescuer rescuer = new Rescuer();
-Dog dog = new Dog();
-DogFood dogFood = new DogFood();
-Vet vet = new Vet();
 
 
 

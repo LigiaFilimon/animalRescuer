@@ -1,18 +1,12 @@
 package org.fasttrackit;
 
-public class DogFood extends PetShop {
-    private String name = "foodType";
-
-
-
-
-    public DogFood(String name ){
-        this.name= name;
-
-    }
-
-
-
+public class PetShop {
+     Double price;
+     Double quantity;
+     int ageSelection;
+     String flavor;
+     String stature;
+     String type;
 
     public Double getPrice() {
         return price;
@@ -60,6 +54,5 @@ public class DogFood extends PetShop {
 
     public void setType(String type) {
         this.type = type;
-
     }
 }
