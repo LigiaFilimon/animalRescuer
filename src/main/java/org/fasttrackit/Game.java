@@ -6,7 +6,8 @@ public class Game {
     DogFood dogFood = new DogFood();
     Vet vet = new Vet();
     Cat cat = new Cat();
-    Animal animal = new Animal();
+    Animal animal;
+
 
 
 
