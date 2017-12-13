@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 public class DogFood extends PetShop {
-    private String name = "foodType";
+    public String name = "Purina";
 
 
 

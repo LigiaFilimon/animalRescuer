@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 public class Rescuer {
-    private String name;
+    public String name = "Flaviu";
     private Double money=100.5;
 
     private String gender;
@@ -9,11 +9,17 @@ public class Rescuer {
     private String livingConditions;
     private int petsNumber;
 
-    public Rescuer(double money){
-  this.money=money;
-
+    public void feed(Animal animal, DogFood food){
+        DogFood dogFood = new DogFood("purina");
+        Animal dog = new Animal();
+        System.out.println(name + "gave some"+ dogFood.name + "to" + dog.name );
     }
 
+    public void entertain(Animal animal, EntertainmentActivity entertainmentActivity){
+        Animal dog = new Animal();
+        EntertainmentActivity entertainmentActivity1 = new EntertainmentActivity("fetching");
+
+    }
 
     public String getName() {
         return name;

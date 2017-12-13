@@ -1,12 +1,16 @@
 package org.fasttrackit;
 
 public class PetSitter {
-    private String name;
+    private String name= "Emma";
     private String gender;
     private int sittersNumber;
     private int age;
 
     public String getName() {
+        return name;
+    }
+
+    public String petsit(Animal animal){
         return name;
     }
 

@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 public class Animal {
-    private String name;
+    public String name="Chaika";
     private int age;
     private String healthCondition;
     private String gender;

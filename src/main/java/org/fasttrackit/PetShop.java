@@ -7,6 +7,10 @@ public class PetShop {
      String flavor;
      String stature;
      String type;
+public void sell( DogFood dogFood){
+
+}
+
 
     public Double getPrice() {
         return price;
