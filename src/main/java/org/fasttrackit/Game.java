@@ -12,8 +12,8 @@ public class Game {
     Animal animal;
     String name;
 
-    private List<DogFood>availableFood= new ArrayList<DogFood>();
-    EntertainmentActivity[]availableActivities = new EntertainmentActivity[3];
+    private List<DogFood> availableFood = new ArrayList<DogFood>();
+    EntertainmentActivity[] availableActivities = new EntertainmentActivity[3];
 
     public List<DogFood> getAvailableFood() {
         return availableFood;
@@ -33,25 +33,44 @@ public class Game {
 
     private void initFood() {
         DogFood dogFood = new DogFood("Purina");
-        DogFood animalFood = new DogFood( "milk");
+        DogFood animalFood = new DogFood("milk");
         availableFood.set(0, dogFood);
         availableFood.set(1, animalFood);
-
+        availableFood.add(new DogFood("Purina"));
+        availableFood.add(new DogFood("milk"));
     }
-
-public void start() {
-        initFood();
-        initAvtivities();
-}
-private void initAvtivities(){
+    private void initActivities() {
         EntertainmentActivity activity = new EntertainmentActivity("fetching");
         EntertainmentActivity funActivity = new EntertainmentActivity("findTheTreats");
         availableActivities[0] = activity;
         availableActivities[1] = funActivity;
 
 
+    }
+    public void start() {
+        initFood();
+        initActivities();
+
+        for (DogFood dogFood : availableFood) {
+            if (dogFood != null) {
+                System.out.println(dogFood.getType());
+            }
+        }
+    for (EntertainmentActivity entertainmentActivity : availableActivities) {
+            if (availableActivities != null) {
+                System.out.println(entertainmentActivity.name);
+            }
+    }
+
+
+    }
+
+
+
+
 }
-}
+
+
 
 
 
